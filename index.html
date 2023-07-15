@@ -363,7 +363,7 @@
             </p>
         </div>
 
-        <div class="block-social-media">
+        <div class="block-social-media footer-first-block">
               <p class="social-media">Social media  </p>
               <ul class="footer-soc list">
                 <li class="footer-soc-item link">
@@ -397,19 +397,113 @@
                 </li>
               </ul>
         </div>
+        <div class="block-social-media">
+          <p class="social-media">Subscribe </p>
+          <div class="all-div-subscribe-class">
 
+            <input type="email" 
+                name="user-email-footer"  
+                class="footer-input" 
+                placeholder="E-mail" />
+                              
+            <button type="submit" class="subscribe-class">Subscribe
+                    <span>
+                      <svg class="subscribe-fill" width="24" height="20">
+                        <use href="./images/icons.svg#icon-Frame-3"></use>
+                      </svg>  
+                    </span>
+            </button>
+         </div>
+        </div>
       </div>
-    </footer>
+      </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal></div> -->
+    <div class="backdrop" data-modal>
       <div class="modal">
-         
-          <button type="button"   class="modal-close" data-modal-close> 
+          <button type="button"   
+             class="modal-close" 
+             data-modal-close> 
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
+          </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Name*</label>
+            <div class="input-wrap">
+              <input 
+                type="text" 
+                name="user-name"  
+                class="modal-input" 
+                placeholder="Name*"
+                required />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person-black-18"></use>
+                </svg>
 
-        </button>
+            </div>
+          </div>  
+          
+          <div class="modal-field">
+            <label for="user-tel" class="input-label">Phone</label>
+            <div class="input-wrap">
+              <input 
+                type="tel" 
+                name="user-tel" 
+                class="modal-input" 
+                placeholder="+38 (50) 555-55-55"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                title="+38 (50) 555-55-55"
+                required
+                />
+              <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone-black-18"></use>
+              </svg>
+
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-email" class="input-label">Email</label>
+            <div class="input-wrap">
+              <input 
+                type="email" 
+                name="user-email" 
+                class="modal-input" 
+                placeholder="E-mail" />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black-18"></use>
+              </svg>  
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-text" class="input-label">Comment</label>
+            <textarea name="user-text"
+                     id="user-text" 
+                     class="modal-comment"
+                     placeholder="Комментар">
+            </textarea>
+          </div>
+
+          <div class="modal-field">
+            <input type="checkbox" 
+              id="zgoda"
+              name="zgoda"
+              class="input-zgoda visually-hidden"
+              value="on" />
+            <label for="zgoda" class="label-zgoda">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the Privacy Policy</label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
 
       </div>
     </div>

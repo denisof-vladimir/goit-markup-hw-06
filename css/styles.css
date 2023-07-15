@@ -262,7 +262,7 @@ img{display: block;}
     background-color: var(--portfolio-filter-color);
     cursor: pointer;
     display: block;
-    margin: auto;;
+    margin: auto;
     margin-top: 48px;
     align-items: flex-start;
     padding: 12px 24px;
@@ -641,7 +641,7 @@ img{display: block;}
     left: 50%;
     width: 408px;
     min-height: 584px;
-    /* padding: 20px; */
+    padding: 20px;
     background-color:rgba(252, 252, 252, 1);
     border-radius: 4px;
     transition: transform 250ms var(--timing-function);
@@ -663,14 +663,14 @@ img{display: block;}
     justify-content: center;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
+    padding: 10;
     cursor: pointer;
     transition: background-color 250ms var(--timing-function),
                 border 250ms var(--timing-function);
 
             /* color 250ms var(--timing-function), */
     margin-left: auto;
-    
+    margin-bottom: 10px;
 }
 .modal-close:hover,
 .modal-close:focus {
@@ -695,4 +695,165 @@ img{display: block;}
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+}
+.modal-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    /* justify-content: center; */
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: var(--background-color-body);
+
+}
+.modal-input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+    /* margin-bottom: 10px; */
+    padding-left: 30px;
+    font-size: 12px;
+    outline: transparent;
+    color: #9c0d49;
+
+}
+.modal-input::placeholder{
+    color: rgb(107, 199, 130);
+}
+.modal-input:focus {
+    border-color: #1c6128;
+
+    /* color: red; */
+} 
+
+.modal-input:focus + .modal-icon {
+    /* border-color: #329242; */
+
+    fill: #c4341a;
+}
+.modal-comment{
+    width:100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #2E2F42 ;
+    border-radius: 4px;
+    resize: none;
+}
+.input-label{
+
+}
+.modal-icon{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-wrap{
+    position: relative;
+}
+.input-wrap:focus-within + svg {
+    /* border-color: #329242; */
+
+    fill: #1a1dc4;
+}
+
+.modal-field{
+    margin-bottom: 10px;
+}
+.label-zgoda{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    
+}
+.label-zgoda span{
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+    /* border: 1px solid #2E2F4266 */
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.input-zgoda{
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+}
+.input-zgoda:checked + .label-zgoda span {
+    background-color: #9747FF;
+    border: none;
+    fill: #ffffff;
+}
+.footer-input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: var(--background-color-body);
+    /* margin-bottom: 10px; */
+    /* padding-left: 30px; */
+    font-size: 12px;
+    margin-right: 20px;
+    /* outline: transparent; */
+    color: #FFFFFF;
+}
+.footer-input::placeholder {
+    color: #FFFFFF;
+}
+
+.footer-input:focus {
+    border-color: #1c6128;
+
+    /* color: red; */
+}
+.subscribe-class{
+    /* display: block; */
+    width: 165px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: var(--background-color-body);
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-fill{
+    color: var(--title-color);
+    /* background-color: var(--portfolio-filter-color); */
+    fill: #ffffff;
+    transition: background-color 250ms var(--timing-function);
+    /* border: none; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    /* padding: 12px 24px; */
+    width: 24px;
+    height: 20px;
+    
+
+}
+
+.subscribe-fill:hover,
+.subscribe-fill:focus {
+    background-color: var(--color-focus-blu);
+    border: 1px solid transparent;
+}
+.all-div-subscribe-class{
+    display: flex;
+    /* justify-items: end; */
+    /* align-items:flex-end ; */
+
+}
+.div-button-subscribe{
+    display: block;
 }
