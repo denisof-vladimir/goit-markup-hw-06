@@ -806,13 +806,16 @@ img{display: block;}
     margin-right: 20px;
     /* outline: transparent; */
     color: #FFFFFF;
+    transition: background-color 250ms var(--timing-function),
+                border 250ms var(--timing-function);
 }
 .footer-input::placeholder {
     color: #FFFFFF;
 }
 
+.footer-input:hover,
 .footer-input:focus {
-    border-color: #1c6128;
+    border-color: #6ba174;
 
     /* color: red; */
 }
@@ -826,27 +829,37 @@ img{display: block;}
     background-color: var(--background-color-body);
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms var(--timing-function),
+            border 250ms var(--timing-function),
+            fill 250ms var(--timing-function);
+}
+.subscribe-class:hover,
+.subscribe-class:focus +svg {
+    background-color: var(--color-focus-blu);
+    border: 1px solid transparent;
+    fill: var(--color-focus-blu);
 }
 
 .subscribe-fill{
+    width: 24px;
+    height: 20px;
     color: var(--title-color);
     /* background-color: var(--portfolio-filter-color); */
     fill: #ffffff;
-    transition: background-color 250ms var(--timing-function);
     /* border: none; */
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
     border-radius: 4px;
     /* padding: 12px 24px; */
-    width: 24px;
-    height: 20px;
-    
-
+    transition: background-color 250ms var(--timing-function),
+                border 250ms var(--timing-function),
+                fill 250ms var(--timing-function);
 }
 
 .subscribe-fill:hover,
 .subscribe-fill:focus {
     background-color: var(--color-focus-blu);
     border: 1px solid transparent;
+    fill: var(--color-focus-blu);
 }
 .all-div-subscribe-class{
     display: flex;
